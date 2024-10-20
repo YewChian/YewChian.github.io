@@ -1,1 +1,1 @@
-Games hosted here.
+Games hosted here
