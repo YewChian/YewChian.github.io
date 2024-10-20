@@ -27,6 +27,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+	background-color: #8b6d9c;
 }
 
 h1 {
@@ -35,7 +36,7 @@ h1 {
 	margin: auto;
 }
 h2 {
-  font-size: 1.5em;
+  font-size: 1.3em;
 	margin: auto;
 }
 h3 {
@@ -72,12 +73,11 @@ video {
 	display: grid;
 	grid-template-rows: 1fr 200px 2fr;
   font-weight: 500;
-  color: #fbf5ef;
+  background-color: #494d7e;
   text-decoration: inherit;
-	row-gap: 0px;
 	max-width: 300px;
 	max-height: 500px;
-	padding: 20px;
+	padding: 20px 20px 20px 20px;
 }
 
 .logo {
@@ -90,11 +90,15 @@ video {
 	color: #fbf5ef;
 	background-color: #494d7e;
 	column-gap: 10px;
+	padding: 10px 10px 10px 10px;
 }
 
 .header {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
 	color: #fbf5ef;
 	background-color: #272744;
+	row-gap: 10px
 }
 
 .app-container {
