@@ -5,7 +5,8 @@ import FirestormFarmingVideo from './videos/FirestormFarmingVideo.mp4'
 import FirestormFarmingPlaythrough from './videos/FirestormFarmingVideo.mp4'
 import CatMayorsVideo from './videos/CatMayorsVideo.mp4'
 import CatMayorsPlaythrough from './videos/CatMayorsVideo.mp4'
-//import BabyThrowingSimulator from './BabyThrowingSimIsolated/index.html'
+import ScarletSalamiVideo from './videos/CatMayorsVideo.mp4'
+import ScarletSalamiPlaythrough from './videos/CatMayorsVideo.mp4'
 import './App.css'
 import {
 	createBrowserRouter,
@@ -16,9 +17,9 @@ function App() {
 	const Games = () => {
 		return (
 			<div className="container">
-				<a className="card" href="/src/BabyThrowingSimulatorIsolated/index.html" target="_blank">
+				<a className="card" href="https://phatwhale.itch.io/baby-throwing-simulator" target="_blank">
 					<h2>Baby Throwing Simulator</h2>
-					<video loop autoPlay muted onClick="/src/videos/BabyThrowingSimulatorVideo">
+					<video loop autoPlay muted>
 						<source 
 							src={BabyThrowingSimulatorVideo}
 							type="video/mp4"
@@ -26,7 +27,7 @@ function App() {
 					</video>
 					<h3>Defend your house against persistent suitors in this projectile-slinging roguelike</h3>
 				</a>
-				<a className="card" href="/src/FirestormFarming/index.html" target="_blank">
+				<a className="card" href="https://mykatsudon.itch.io/firestorm-farming" target="_blank">
 					<h2>Firestorm Farming</h2>
 					<video loop autoPlay muted>
 						<source 
@@ -36,7 +37,7 @@ function App() {
 					</video>
 					<h3>Submission for Brackey's Game Jam 2024.2. Manage your income while planting crops, then burn them down as efficiently as possible</h3>
 				</a>
-				<a className="card" href="/src/CatMayors/index.html" target="_blank">
+				<a className="card" href="https://mykatsudon.itch.io/cat-mayors" target="_blank">
 					<h2>Cat Mayors</h2>
 					<video loop autoPlay muted>
 						<source 
@@ -45,6 +46,16 @@ function App() {
 						/>
 					</video>
 					<h3>2-player cat-themed building sim</h3>
+				</a>
+				<a className="card" href="https://phatwhale.itch.io/scarlet-salami" target="_blank">
+					<h2>Scarlet Salami</h2>
+					<video loop autoPlay muted>
+						<source 
+							src={ScarletSalamiVideo}
+							type="video/mp4"
+						/>
+					</video>
+					<h3>2-player co-op rpg with jobs based on the game's interpretation of your personality</h3>
 				</a>
 			</div>
 		)
@@ -74,6 +85,13 @@ function App() {
 						type="video/mp4"
 					/>
 				</video>
+				<h2>Scarlet Salami</h2>
+				<video controls>
+					<source
+						src={ScarletSalamiPlaythrough}
+						type="video/mp4"
+					/>
+				</video>
 			</div>
 		)
 	}
@@ -87,12 +105,6 @@ function App() {
 			path: '/gameplay',
 			element: <GameplayVideos /> ,
 		},
-		/*
-		{
-			path: '/BabyThrowingSimulatorIsolated',
-			element: <BabyThrowingSimulator />,
-		}
-		*/
 	]);
 
 
