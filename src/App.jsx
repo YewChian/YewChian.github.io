@@ -5,19 +5,21 @@ import FirestormFarmingVideo from './videos/FirestormFarmingVideo.mp4'
 import FirestormFarmingPlaythrough from './videos/FirestormFarmingVideo.mp4'
 import CatMayorsVideo from './videos/CatMayorsVideo.mp4'
 import CatMayorsPlaythrough from './videos/CatMayorsVideo.mp4'
+import ScarletSalamiVideo from './videos/CatMayorsVideo.mp4'
+import ScarletSalamiPlaythrough from './videos/CatMayorsVideo.mp4'
 import './App.css'
 import {
-  BrowserRouter as Router,
-  Routes, Route, Link
+	createBrowserRouter,
+	RouterProvider,
 } from 'react-router-dom'
 
 function App() {
 	const Games = () => {
 		return (
 			<div className="container">
-				<a className="card" href="/src/BabyThrowingSimulatorIsolated/index.html" target="_blank">
+				<a className="card" href="https://phatwhale.itch.io/baby-throwing-simulator" target="_blank">
 					<h2>Baby Throwing Simulator</h2>
-					<video loop autoPlay muted onClick="/src/BabyThrowingSimulatorIsolated/index.html">
+					<video loop autoPlay muted>
 						<source 
 							src={BabyThrowingSimulatorVideo}
 							type="video/mp4"
@@ -25,7 +27,7 @@ function App() {
 					</video>
 					<h3>Defend your house against persistent suitors in this projectile-slinging roguelike</h3>
 				</a>
-				<a className="card" href="/src/FirestormFarming/index.html" target="_blank">
+				<a className="card" href="https://mykatsudon.itch.io/firestorm-farming" target="_blank">
 					<h2>Firestorm Farming</h2>
 					<video loop autoPlay muted>
 						<source 
@@ -35,7 +37,7 @@ function App() {
 					</video>
 					<h3>Submission for Brackey's Game Jam 2024.2. Manage your income while planting crops, then burn them down as efficiently as possible</h3>
 				</a>
-				<a className="card" href="/src/CatMayors/index.html" target="_blank">
+				<a className="card" href="https://mykatsudon.itch.io/cat-mayors" target="_blank">
 					<h2>Cat Mayors</h2>
 					<video loop autoPlay muted>
 						<source 
@@ -44,6 +46,16 @@ function App() {
 						/>
 					</video>
 					<h3>2-player cat-themed building sim</h3>
+				</a>
+				<a className="card" href="https://phatwhale.itch.io/scarlet-salami" target="_blank">
+					<h2>Scarlet Salami</h2>
+					<video loop autoPlay muted>
+						<source 
+							src={ScarletSalamiVideo}
+							type="video/mp4"
+						/>
+					</video>
+					<h3>2-player co-op rpg with jobs based on the game's interpretation of your personality</h3>
 				</a>
 			</div>
 		)
@@ -73,9 +85,29 @@ function App() {
 						type="video/mp4"
 					/>
 				</video>
+				<h2>Scarlet Salami</h2>
+				<video controls>
+					<source
+						src={ScarletSalamiPlaythrough}
+						type="video/mp4"
+					/>
+				</video>
 			</div>
 		)
 	}
+
+	const router = createBrowserRouter([
+		{
+			path: "/",
+			element: <Games />,
+		},
+		{
+			path: '/gameplay',
+			element: <GameplayVideos /> ,
+		},
+	]);
+
+
 
   return (
     <div className="app-container">
@@ -83,19 +115,14 @@ function App() {
         <a href="/">
           <img className="logo" src={FWSIcon}/>
         </a>
-				<Router>
-					<Link to="/">
-						Home
-					</Link>
-					<Link to="/gameplay">
-						Gameplay Videos
-					</Link>
-					<Routes>
-						<Route path='/' element={<Games />} />
-						<Route path='/gameplay' element={<GameplayVideos />} />
-					</Routes>
-				</Router>
+        <a href="/">
+					Home
+        </a>
+        <a href="/gameplay">
+					Playthroughs	
+        </a>
       </div>
+			<RouterProvider router={router} />
     </div>
   )
 }
