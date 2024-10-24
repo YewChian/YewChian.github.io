@@ -29,7 +29,7 @@ function App() {
 							type="video/mp4"
 						/>
 					</video>
-					<h3>Defend your house against persistent suitors in this projectile-slinging roguelike</h3>
+					<h3>Defend your house against persistent suitors in this projectile-slinging roguelike.</h3>
 				</a>
 				<a className="card" href="https://mykatsudon.itch.io/firestorm-farming" target="_blank">
 					<h2>Firestorm Farming</h2>
@@ -39,7 +39,7 @@ function App() {
 							type="video/mp4"
 						/>
 					</video>
-					<h3>Submission for Brackey's Game Jam 2024.2. Manage your income while planting crops, then burn them down as efficiently as possible</h3>
+					<h3> Manage your income while planting crops, then burn them down as efficiently as possible. Submission for Brackey's Game Jam 2024.2.</h3>
 				</a>
 				<a className="card" href="https://mykatsudon.itch.io/cat-mayors" target="_blank">
 					<h2>Cat Mayors</h2>
@@ -49,7 +49,7 @@ function App() {
 							type="video/mp4"
 						/>
 					</video>
-					<h3>2-player cat-themed building sim</h3>
+					<h3>Build a city for cats with another player in this 2-player competitive building sim.</h3>
 				</a>
 				<a className="card" href="https://phatwhale.itch.io/scarlet-salami" target="_blank">
 					<h2>Scarlet Salami</h2>
@@ -59,7 +59,7 @@ function App() {
 							type="video/mp4"
 						/>
 					</video>
-					<h3>2-player co-op rpg with jobs based on the game's interpretation of your personality</h3>
+					<h3>A short 2-player Co-op RPG with unique classes and skills that change based on your personality.</h3>
 				</a>
 			</div>
 		)
