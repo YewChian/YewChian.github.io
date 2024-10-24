@@ -148,10 +148,10 @@ function App() {
           <img className="logo" src={FWSIcon}/>
         </a>
         <a href="/">
-					Home
+					HOME
         </a>
         <a href="/#/playthroughs">
-					Playthroughs	
+					PLAYTHROUGHS	
         </a>
       </div>
 			<RouterProvider router={router} />
