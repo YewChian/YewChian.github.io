@@ -1,12 +1,12 @@
 import FWSIcon from './assets/FWSIcon.png'
 import BabyThrowingSimulatorVideo from './videos/BabyThrowingSimulatorVideo.mp4'
-import BabyThrowingSimulatorPlaythrough from './videos/CatMayorsVideo.mp4'
-import FirestormFarmingVideo from './videos/FirestormFarmingVideo.mp4'
-import FirestormFarmingPlaythrough from './videos/FirestormFarmingVideo.mp4'
+import BabyThrowingSimulatorPlaythrough from './videos/BabyThrowingSimulatorPlaythrough.mp4'
+import FirestormFarmingVideo from './videos/FirestormFarmingPlaythrough.mp4'
+import FirestormFarmingPlaythrough from './videos/FirestormFarmingPlaythrough.mp4'
 import CatMayorsVideo from './videos/CatMayorsVideo.mp4'
-import CatMayorsPlaythrough from './videos/CatMayorsVideo.mp4'
-import ScarletSalamiVideo from './videos/CatMayorsVideo.mp4'
-import ScarletSalamiPlaythrough from './videos/CatMayorsVideo.mp4'
+import CatMayorsPlaythrough from './videos/CatMayorsPlaythrough.mp4'
+import ScarletSalamiVideo from './videos/ScarletSalamiVideo.mp4'
+import ScarletSalamiPlaythrough from './videos/ScarletSalamiPlaythrough.mp4'
 import './App.css'
 import {
 	createBrowserRouter,
