@@ -150,7 +150,7 @@ function App() {
         <a href="/">
 					Home
         </a>
-        <a href="/playthroughs">
+        <a href="/#/playthroughs">
 					Playthroughs	
         </a>
       </div>
