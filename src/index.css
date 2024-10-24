@@ -48,7 +48,6 @@ h2 {
 h3 {
   font-size: 1em;
 	margin: auto;
-	padding-bottom: 20px;
   font-weight: normal;
 }
 button {
@@ -97,7 +96,7 @@ video {
 	color: #fbf5ef;
 	background-color: #494d7e;
 	column-gap: 10px;
-	padding: 10px 10px 10px 10px;
+	padding: 10px 30px 10px 30px;
 }
 
 .header {
