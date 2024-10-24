@@ -13,7 +13,7 @@ import ScarletSalamiPlaythroughP2 from './videos/ScarletSalamiPlaythroughP2.mp4'
 import ScarletSalamiPlaythroughP3 from './videos/ScarletSalamiPlaythroughP3.mp4'
 import './App.css'
 import {
-	createBrowserRouter,
+	createHashRouter,
 	RouterProvider,
 } from 'react-router-dom'
 
@@ -128,13 +128,13 @@ function App() {
 		)
 	}
 
-	const router = createBrowserRouter([
+	const router = createHashRouter([
 		{
 			path: "/",
 			element: <Games />,
 		},
 		{
-			path: '/gameplay',
+			path: '/playthroughs',
 			element: <GameplayVideos /> ,
 		},
 	]);
@@ -150,7 +150,7 @@ function App() {
         <a href="/">
 					Home
         </a>
-        <a href="/gameplay">
+        <a href="/playthroughs">
 					Playthroughs	
         </a>
       </div>
