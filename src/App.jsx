@@ -4,9 +4,13 @@ import BabyThrowingSimulatorPlaythrough from './videos/BabyThrowingSimulatorPlay
 import FirestormFarmingVideo from './videos/FirestormFarmingPlaythrough.mp4'
 import FirestormFarmingPlaythrough from './videos/FirestormFarmingPlaythrough.mp4'
 import CatMayorsVideo from './videos/CatMayorsVideo.mp4'
-import CatMayorsPlaythrough from './videos/CatMayorsPlaythrough.mp4'
+import CatMayorsPlaythroughP1 from './videos/CatMayorsPlaythroughP1.mp4'
+import CatMayorsPlaythroughP2 from './videos/CatMayorsPlaythroughP2.mp4'
+import CatMayorsPlaythroughP3 from './videos/CatMayorsPlaythroughP3.mp4'
 import ScarletSalamiVideo from './videos/ScarletSalamiVideo.mp4'
-import ScarletSalamiPlaythrough from './videos/ScarletSalamiPlaythrough.mp4'
+import ScarletSalamiPlaythroughP1 from './videos/ScarletSalamiPlaythroughP1.mp4'
+import ScarletSalamiPlaythroughP2 from './videos/ScarletSalamiPlaythroughP2.mp4'
+import ScarletSalamiPlaythroughP3 from './videos/ScarletSalamiPlaythroughP3.mp4'
 import './App.css'
 import {
 	createBrowserRouter,
@@ -78,17 +82,45 @@ function App() {
 						type="video/mp4"
 					/>
 				</video>
-				<h2>Cat Mayors</h2>
+				<h2>Cat Mayors Part 1</h2>
 				<video controls>
 					<source
-						src={CatMayorsPlaythrough}
+						src={CatMayorsPlaythroughP1}
 						type="video/mp4"
 					/>
 				</video>
-				<h2>Scarlet Salami</h2>
+				<h2>Cat Mayors Part 2</h2>
 				<video controls>
 					<source
-						src={ScarletSalamiPlaythrough}
+						src={CatMayorsPlaythroughP2}
+						type="video/mp4"
+					/>
+				</video>
+				<h2>Cat Mayors Part 3</h2>
+				<video controls>
+					<source
+						src={CatMayorsPlaythroughP3}
+						type="video/mp4"
+					/>
+				</video>
+				<h2>Scarlet Salami Part 1</h2>
+				<video controls>
+					<source
+						src={ScarletSalamiPlaythroughP1}
+						type="video/mp4"
+					/>
+				</video>
+				<h2>Scarlet Salami Part 2</h2>
+				<video controls>
+					<source
+						src={ScarletSalamiPlaythroughP2}
+						type="video/mp4"
+					/>
+				</video>
+				<h2>Scarlet Salami Part 3</h2>
+				<video controls>
+					<source
+						src={ScarletSalamiPlaythroughP3}
 						type="video/mp4"
 					/>
 				</video>
