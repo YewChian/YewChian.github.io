@@ -39,7 +39,7 @@ function App() {
 							type="video/mp4"
 						/>
 					</video>
-					<h3> Manage your income while planting crops, then burn them down as efficiently as possible. Submission for Brackey's Game Jam 2024.2.</h3>
+					<h3> Manage your income while planting crops, then burn them down as efficiently as possible. (Submission for Brackey's Game Jam 2024.2.)</h3>
 				</a>
 				<a className="card" href="https://mykatsudon.itch.io/cat-mayors" target="_blank">
 					<h2>Cat Mayors</h2>
