@@ -13,9 +13,13 @@
 }
 
 a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
   font-weight: bold;
   color: #fbf5ef;
   text-decoration: inherit;
+	
 }
 a:hover {
   color: #f2d3ab;
@@ -101,7 +105,7 @@ video {
 	grid-template-rows: 1fr 1fr 1fr;
 	color: #fbf5ef;
 	background-color: #272744;
-	row-gap: 10px
+	padding: 20px;
 }
 
 .app-container {
