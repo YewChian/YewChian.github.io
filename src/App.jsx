@@ -18,8 +18,12 @@ import {
 } from 'react-router-dom'
 
 function App() {
-	const Games = () => {
-		return (
+const Games = () => {
+	return (
+		<div>
+			<div className="hero-container">
+				<h2 className="subheader">GAMES</h2>
+			</div>
 			<div className="container">
 				<a className="card" href="https://phatwhale.itch.io/baby-throwing-simulator" target="_blank">
 					<h2>Baby Throwing Simulator</h2>
@@ -62,68 +66,74 @@ function App() {
 					<h3>A short 2-player Co-op RPG with unique classes and skills that change based on your personality.</h3>
 				</a>
 			</div>
-		)
-	}
+		</div>
+	)
+}
 
 	const GameplayVideos = () => {
 		return (
-			<div className="container">
-				<h2>Baby Throwing Simulator</h2>
-				<video controls>
-					<source
-						src={BabyThrowingSimulatorPlaythrough}
-						type="video/mp4"
-					/>
-				</video>
-				<h2>Firestorm Farming</h2>
-				<video controls>
-					<source
-						src={FirestormFarmingPlaythrough}
-						type="video/mp4"
-					/>
-				</video>
-				<h2>Cat Mayors Part 1</h2>
-				<video controls>
-					<source
-						src={CatMayorsPlaythroughP1}
-						type="video/mp4"
-					/>
-				</video>
-				<h2>Cat Mayors Part 2</h2>
-				<video controls>
-					<source
-						src={CatMayorsPlaythroughP2}
-						type="video/mp4"
-					/>
-				</video>
-				<h2>Cat Mayors Part 3</h2>
-				<video controls>
-					<source
-						src={CatMayorsPlaythroughP3}
-						type="video/mp4"
-					/>
-				</video>
-				<h2>Scarlet Salami Part 1</h2>
-				<video controls>
-					<source
-						src={ScarletSalamiPlaythroughP1}
-						type="video/mp4"
-					/>
-				</video>
-				<h2>Scarlet Salami Part 2</h2>
-				<video controls>
-					<source
-						src={ScarletSalamiPlaythroughP2}
-						type="video/mp4"
-					/>
-				</video>
-				<h2>Scarlet Salami Part 3</h2>
-				<video controls>
-					<source
-						src={ScarletSalamiPlaythroughP3}
-						type="video/mp4"
-					/>
-				</video>
+			<div>
+				<div className="hero-container">
+					<h2 className="subheader">PLAYTHROUGHS</h2>
+				</div>
+				<div className="container">
+					<h2>Baby Throwing Simulator</h2>
+					<video controls>
+						<source
+							src={BabyThrowingSimulatorPlaythrough}
+							type="video/mp4"
+						/>
+					</video>
+					<h2>Firestorm Farming</h2>
+					<video controls>
+						<source
+							src={FirestormFarmingPlaythrough}
+							type="video/mp4"
+						/>
+					</video>
+					<h2>Cat Mayors Part 1</h2>
+					<video controls>
+						<source
+							src={CatMayorsPlaythroughP1}
+							type="video/mp4"
+						/>
+					</video>
+					<h2>Cat Mayors Part 2</h2>
+					<video controls>
+						<source
+							src={CatMayorsPlaythroughP2}
+							type="video/mp4"
+						/>
+					</video>
+					<h2>Cat Mayors Part 3</h2>
+					<video controls>
+						<source
+							src={CatMayorsPlaythroughP3}
+							type="video/mp4"
+						/>
+					</video>
+					<h2>Scarlet Salami Part 1</h2>
+					<video controls>
+						<source
+							src={ScarletSalamiPlaythroughP1}
+							type="video/mp4"
+						/>
+					</video>
+					<h2>Scarlet Salami Part 2</h2>
+					<video controls>
+						<source
+							src={ScarletSalamiPlaythroughP2}
+							type="video/mp4"
+						/>
+					</video>
+					<h2>Scarlet Salami Part 3</h2>
+					<video controls>
+						<source
+							src={ScarletSalamiPlaythroughP3}
+							type="video/mp4"
+						/>
+					</video>
+				</div>
 			</div>
 		)
 	}
@@ -142,20 +152,20 @@ function App() {
 
 
   return (
-    <div className="app-container">
-      <div className="header">
-        <a href="/">
-          <img className="logo" src={FWSIcon}/>
-        </a>
-        <a href="/">
-					HOME
-        </a>
-        <a href="/#/playthroughs">
-					PLAYTHROUGHS	
-        </a>
-      </div>
-			<RouterProvider router={router} />
-    </div>
+	<div className="app-container">
+		<div className="header">
+			<a href="/">
+			  <img className="logo" src={FWSIcon}/>
+			</a>
+			<a href="/">
+							HOME
+			</a>
+			<a href="/#/playthroughs">
+							PLAYTHROUGHS	
+			</a>
+		</div>
+		<RouterProvider router={router} />
+	</div>
   )
 }
 
