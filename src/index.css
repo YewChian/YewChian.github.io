@@ -1,5 +1,10 @@
+@font-face {
+  font-family: 'Pixel';
+src: url('Fonts/Pixeltype.ttf') format('truetype');
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Pixel', sans-serif;
   line-height: 1.5;
   font-weight: 500;
 
