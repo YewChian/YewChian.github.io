@@ -45,8 +45,8 @@ const Games = () => {
 					</video>
 					<h3> Manage your income while planting crops, then burn them down as efficiently as possible. (Submission for Brackey's Game Jam 2024.2.)</h3>
 				</a>
-				<a className="card" href="https://mykatsudon.itch.io/cat-mayors" target="_blank">
-					<h2>Cat Mayors</h2>
+				<a className="card" href="https://mykatsudon.itch.io/whiskertown" target="_blank">
+					<h2>Whiskertown Duels</h2>
 					<video loop autoPlay muted>
 						<source 
 							src={CatMayorsVideo}
